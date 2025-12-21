@@ -87,7 +87,7 @@ root
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/billionlab.git
+git clone https://github.com/baetab/billionlab.git
 
 # Install dependencies
 npm install
