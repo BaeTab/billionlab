@@ -9,7 +9,6 @@ export default function LandingPage() {
 
     // 광고 링크 (랜덤 선택)
     const adLinks = [
-        'https://deg.kr/2a1deeb',
         'https://deg.kr/799c1ba'
     ];
     const [adLink] = useState(() => adLinks[Math.floor(Math.random() * adLinks.length)]);
@@ -122,8 +121,8 @@ export default function LandingPage() {
                             onClick={handleAdClick}
                             disabled={countdown > 0}
                             className={`w-full py-4 px-6 rounded-xl font-bold text-white transition-all duration-300 mb-4 ${countdown > 0
-                                    ? 'bg-gray-400 cursor-not-allowed'
-                                    : 'bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 shadow-lg hover:shadow-xl transform hover:-translate-y-1'
+                                ? 'bg-gray-400 cursor-not-allowed'
+                                : 'bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 shadow-lg hover:shadow-xl transform hover:-translate-y-1'
                                 }`}
                         >
                             {countdown > 0 ? (

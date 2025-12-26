@@ -8,7 +8,6 @@ interface AdModalProps {
 }
 
 const AD_LINKS = [
-    'https://deg.kr/2a1deeb',
     'https://deg.kr/799c1ba'
 ];
 
@@ -77,8 +76,8 @@ export default function AdModal({ isOpen, onClose, onAdViewed }: AdModalProps) {
                         onClick={handleAdClick}
                         disabled={countdown > 0}
                         className={`w-full py-4 px-6 rounded-xl font-semibold text-white transition-all duration-300 ${countdown > 0
-                                ? 'bg-gray-400 cursor-not-allowed'
-                                : 'bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5'
+                            ? 'bg-gray-400 cursor-not-allowed'
+                            : 'bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5'
                             }`}
                     >
                         {countdown > 0 ? (
